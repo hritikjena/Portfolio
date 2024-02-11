@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hritik- Portfolio</title>
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(4, 4, 68);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(12, 12, 207);
+        }   
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: lavender;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .firstSection > div{
+            width: 35%;
+        }
+        .leftSection{
+            font-size: 2rem ;
+            margin: 78px 0;
+        }
+        .rightSection img{
+            width: 88%;
+            margin: 28px 0;
+        }
+        .color{
+            color: rgb(160, 78, 237);
+        }
+        #element{
+            color: rgb(160, 78, 237);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 2.4rem;
+        }
+        .text-small{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Hritik's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="color">Hritik</span>
+                <div>and I am a Student</div>
+                <div>and passionate  about </div>
+                <div><span id="element"></span></div></div>
+            <div class="rightSection">
+                <img src ="bbg.png" alt="developer pic">
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-small">What I have done so far</span>
+            <h1>Work Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>   
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Problem solving', 'Generative AI.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
